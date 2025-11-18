@@ -1,0 +1,353 @@
+/* General reset and font setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #0a0a2a, #1b073a, #311a52);
+  color: #f2f2f2;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+header {
+  text-align: center;
+  padding: 80px 20px;
+  color: #fff;
+  background: radial-gradient(circle at top, #24124a, #0a0625);
+  position: relative;
+}
+
+#submit-btn.submitted {
+  background: #8bf581;
+  color: #090909;
+  cursor: default;
+} 
+
+
+.Hero-section h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: #ffd700;
+  margin-top: 10px;
+}
+
+.Hero-section h3 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #e2c1ff;
+}
+
+.Hero-section p {
+  margin: 20px auto;
+  font-size: 1.1rem;
+  max-width: 700px;
+  color: #ddd;
+}
+
+.icon {
+  color: #ffd700;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+/* Button styles */
+button {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 25px;
+  margin: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.4s ease;
+}
+
+.book-btn {
+  background: linear-gradient(90deg, #ffda44, #f0a500);
+  color: #000;
+}
+
+.services-btn {
+  background: transparent;
+  border: 2px solid #ffda44;
+  color: #ffda44;
+}
+
+/* Button hover animations */
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+}
+
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 5px #ffd700);
+  }
+  to {
+    filter: drop-shadow(0 0 20px #f0a500);
+  }
+}
+
+/* Main Section */
+main {
+  padding: 50px 10%;
+}
+
+main h2 {
+  color: #ffd700;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Services Section */
+.service {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.service-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+}
+
+/* About Section
+.about-section {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 12px;
+  margin: 50px 0;
+  border-left: 3px solid #ffd700;
+}
+
+.about-section h2 {
+  color: #ffd700;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  margin-bottom: 15px;
+  color: #ddd;
+  text-align: justify;
+}
+
+.about-section img {
+  width: 300px;
+  border-radius: 12px;
+}
+*/
+ /* About Section */
+.about-section {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 10%;
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 2px solid rgba(255, 215, 0, 0.3);
+  border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+  border-radius: 15px;
+  margin: 60px 0;
+}
+
+
+.about-text {
+  color: #ddd;
+}
+
+.about-text h2 {
+  color: #ffd700;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+/* About Image */
+.about-section img {
+  width: 100%;
+  border-radius: 15px;
+  border: 2px solid rgba(255, 215, 0, 0.4);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.2);
+  transition: all 0.4s ease;
+}
+
+.about-section img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 35px rgba(255, 215, 0, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .about-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-text {
+    order: 2;
+  }
+
+  .about-section img {
+    width: 80%;
+    margin: 0 auto 20px;
+    display: block;
+  }
+}
+/* Responsive Design */
+
+/* Expertise Section
+.expertise {
+  margin-bottom: 40px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+}
+Expertise Section 
+
+*/
+
+.book {
+  border-radius: 8px;
+  transition: all 0.4s ease;
+  transform: scale(1.03);
+  box-shadow: 0 0 35px rgba(255, 215, 0, 0.4);
+  padding:17px;
+}
+
+
+.expertise {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin: 50px 0;
+  align-items: start;
+}
+  */
+
+.expertise h2 {
+  color: #ffda44;
+  margin-bottom: 10px;
+}
+
+/* Achievements Section */
+.award section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  text-align: center;
+}
+
+.achieve {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.achieve:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Form Section */
+.book-consultation form {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  max-width: 600px;
+  margin: auto;
+}
+
+.book-consultation label {
+  display: block;
+  margin-bottom: 6px;
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.book-consultation input,
+.book-consultation select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.book-consultation input::placeholder {
+  color: #ccc;
+}
+
+.submit {
+  display: block;
+  width: 100%;
+  background: linear-gradient(90deg, #ffda44, #f0a500);
+  color: #000;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+
+.submit:hover {
+  background: linear-gradient(90deg, #f0a500, #ffda44);
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+}
+
+/* Footer */
+footer {
+  background: #0b0b1f;
+  color: #ccc;
+  padding: 50px 10%;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.footer h3 {
+  color: #ffd700;
+}
+
+.footer ul li a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  color: #ffda44;
+  text-decoration: underline;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}

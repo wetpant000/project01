@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrovastu</title>
+    <meta name="description" content="Discover the cosmic wisdom of vedic astrology and vastu shastra.
+     Unlock insights into your life path, relationships, career and spiritual journey.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="Hero-section" id="hero-section">
+        <svg class="icon" width="40" eight="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </svg>
+        <h1><u>Astrovastu</u></h1>
+        <h3><u>With Pritha Ghosh Pramanik</u></h3>
+        <p>Discover the cosmic wisdom of vedic astrology and vastu shastra.
+            Unlock insights into your life path, relationships, career and spiritual journey.</p>
+        <button class="book-btn" id="book-btn" onclick="bookConsultation()">Book Consultation</button>
+        <button class ="services-btn" id="service-btn" onclick="exploreServices()">Explore Services</button>
+        </div>
+    </header>
+    <main>
+        <h2 id="services-consultation">Services & Consultations </h2>
+        <section class="service" >
+            
+            
+            <div class="service-item">
+                <h3>Astrology Consultation</h3>
+                <p>Get personalized insights into your life path, relationships, career and spiritual journey through vedic astrology readings.</p>
+            </div>
+            <div class="service-item">
+                <h3>Vastu consultation</h3>
+                <p>Receive expert guidance on optimizing your living spaces for better energy flow and harmony.</p>
+            </div>
+        </section>
+        <nav calss="about">
+        <div class ="about-section">
+            <h2>About Pritha Ghosh Pramanik</h2>
+            <img src="pritha.png" alt="Pritha Ghosh Pramanik">
+
+            <p>Born in Kolkata, West Bengal, Pritha Ghosh Pramanik is a multifaceted personality-
+                an accomplished artist, educator and visionary. A Visharadh in Vocal Music
+                and a National Awardee in Bharatanatyam, she blends art and intellect with grace. 
+            </p>
+            <p>
+                She completed her Master's in Biotechnology in 1998 as the University Topper, followed
+                by a Post Graduate Diploma in Computer Applications. After marriage, she founded her own coaching
+                institute in 2006, dedicated to educating and guidling young minds preparing for competitive and entrance
+                examinations.
+            </p>
+            <p>
+                Driven by a deep spiritual calling, Prtha began exploring metaphysics, helping thousands of woman through
+                astrological and vastu-based remedies. Her dedication earned her the Dr. A.P.J Abdul kalam Award in 2019,
+                along with several other prestigious recognitions, including the Chalk and Duster Woman Achiever Award.
+            </p>
+            <p>
+                In 2023, she embarked on her jounery as an Author, launching her first book, "Spiritual Awakening" during a Woman's 
+                Day event she organized with 50 inspiring woman. As the President of NGO "Sakkhi", she continues to empower
+                woman and promote holistic well-being.
+            </p>
+            <p>
+                Pritha has since authored "Earths Silient Skin" and "The Yoga of Dance", both launched at major events celebrating woman,
+                health and self-expression. Through her work, she continues to spread awareness about mental health wellness and spiritual growth, inspiring
+                countlesss lives across the nation
+            </p>
+        </div>
+        <h2>published book are:</h2>
+        <img class="book" src="book1.png" alt="Spiritual Journey" width="270" hieght="500">
+        <img class="book" src="book2.png" alt="Earth's Silent Skin"  width="260" hieght="480">
+        <img class="book" src="book3.png" alt="The Yoga Of Dance"  width="270" hieght="500">
+
+        </nav class="whatis">
+        <nav>
+        <section id="2">
+            <div class="expertise">
+              <h2>Expertise & Background</h2>
+              <p>Pritha Ghosh Pramanik is a distinguished practitioner of 
+                Vedic astrology and Vastu Shastra, combining ancient 
+                wisdom with modern understaning to provide transformative guidance.
+              </p>
+              <p>
+                Her deep knowledge of planetary influences, birth analysis,
+                and spatial harmonics has helped thousands of clients find 
+                clarity, purpose and balance in their lives.
+                </p>
+            </div>
+            <div class="expertise">
+            <h2>Philosophy & Approach</h2>
+            <p>Every consultation is personalized, compassiona and rooted in the 
+                timeless principles of Vedic astrology. Pritha belives in empowering clients with knowledge
+                that helps them make informed decisions.
+            </p>
+            
+            <p>Through detailed analysis and intuitive guidance, she illuminates life's
+                path, helping you navigate challenges and embrace opportunities with 
+                cosmic awareness.
+            </p>
+            </div>
+        </section>
+        </nav>
+        <nav class="award">
+        <section  id="2">
+            <div class="achieve">
+                <h4>15+ years Experience</h4>
+                <p>Deep expertise in Astro physics</p>
+            </div>
+            <div class="achieve">
+                <h4>5.5lakhs+</h4>
+                <p>Trusted by clents worldwide</p>
+            </div>
+            <div class="achieve">
+                <h4>Certified Practitioner</h4>
+                <p>Formally trained in ancient traditions</p>
+            </div>
+            <div class="achieve">
+                <h4>Holistic Approach</h4>
+                <p>Mind, body and spirit alignment</p>
+            </div>
+        </section>
+        </nav>
+        <section class="book-consultation" id="book-consultations">
+            <h2>Book a Consultation</h2>
+            <!-- Added id so JavaScript can reliably select this form -->
+            <form id="booking-form" action="/post" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <br><br>
+                <label for="phone" >Phone:</label>
+                <input type="number" id="phone" name="phone" min="0" oninput="if(this.value.length > 10) this.value = this.value.slice(0,10);" placeholder="Enter your phone number" required>
+                <br><br>
+                
+
+                <label for="service" >Select Service:</label>
+                <select id="service" name="service" required>
+                    <option value="astrology-consultation">Astrology Consultation</option>
+                    <option value="vastu-shastra">Vastu Consultation</option>
+                </select>
+                <br><br>
+                <button class="submit" id="submit-btn" type="submit">Submit</button>
+            </form>
+        </section>
+    
+ 
+    </main>
+    <hr>
+    <footer>
+        <nav class="foot">
+        <div class="footer-container" id="foot">
+        <div class="footer">
+            <h3>published book:</h3>
+            <a href="https://www.amazon.in/SPIRITUAL-JOURNEY-PRITHA-GHOSH-PRAMANIK-ebook/dp/B0CRV6W9HM">Spiritual Journey</a><br>
+            <a href="">The Yoga Of Dance</a><br>
+            <a href="">Earth's Silent Skin</a>
+        </div>
+        <div class="contact">
+          
+            <ul style="list-style-type: none">
+                <h4>Contact Us</h4>
+                <li><a href="mailto:pritha90@gmail.com">pritha90@gmail.com</a></li>
+                <li><a href="tel:+91 99003 29145">+91 99003 29145</a></li>
+                <li><a href="Address">Bangalore, Karnataka, India</a></li>
+            </ul>
+        </div>
+        <div class="Quick-links">   
+            
+            <ul style="list-style-type: none">
+                <h4>Quick Links</h4>
+                <li><a href="https://www.facebook.com/people/Astro-Vastu-Consulting/100057326775285/?mibextid=ZbWKwL">Facebook</a></li>
+                <li><a href="https://www.youtube.com/c/VastuAceWithPrithaGhoshPramanik">Youtube</a></li>
+                <li><a href="https://www.linkedin.com/in/pritha-pramanik-00b057a/">LinkedIn</a></li>
+            </ul>
+        </div>  
+        </div>  
+        <br>
+        <p>© 2023 PrithaGhoshPramanik. All rights reserved.</p>
+
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -31,7 +31,7 @@ header {
 .Hero-section h1 {
   font-size: 3rem;
   letter-spacing: 2px;
-  color: #ffd700;
+  color: #ddd;
   margin-top: 10px;
 }
 
@@ -49,7 +49,7 @@ header {
 }
 
 .icon {
-  color: #ffd700;
+  color: #ddd;
   animation: glow 2s ease-in-out infinite alternate;
 }
 
@@ -66,14 +66,14 @@ button {
 }
 
 .book-btn {
-  background: linear-gradient(90deg, #ffda44, #f0a500);
+  background: linear-gradient(90deg, #ddd, #ddd);
   color: #000;
 }
 
 .services-btn {
   background: transparent;
-  border: 2px solid #ffda44;
-  color: #ffda44;
+  border: 2px solid #ddd;
+  color: #ddd;
 }
 
 /* Button hover animations */
@@ -97,7 +97,7 @@ main {
 }
 
 main h2 {
-  color: #ffd700;
+  color: #ddd;
   font-size: 2rem;
   margin-bottom: 30px;
   text-align: center;
@@ -124,32 +124,40 @@ main h2 {
   transform: translateY(-5px);
   box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
 }
-
-/* About Section
-.about-section {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 40px;
-  border-radius: 12px;
-  margin: 50px 0;
-  border-left: 3px solid #ffd700;
+.books-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-content: center;
+  width:100%;
+  padding: 20px 0;
+  margin-left: 40px;
 }
 
-.about-section h2 {
-  color: #ffd700;
-  margin-bottom: 20px;
+.book {
+  width: 100%;
+  max-width: 250px;      /* Desktop size */
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
 }
 
-.about-section p {
-  margin-bottom: 15px;
-  color: #ddd;
-  text-align: justify;
+/* Mobile view – 2 books per row */
+@media (max-width: 600px) {
+  .book {
+    max-width: 45%;
+  }
 }
 
-.about-section img {
-  width: 300px;
-  border-radius: 12px;
+/* Very small phones – 1 book per row */
+@media (max-width: 400px) {
+  .book {
+    max-width: 80%;
+  }
 }
-*/
+
+
  /* About Section */
 .about-section {
   display: grid;
@@ -170,7 +178,7 @@ main h2 {
 }
 
 .about-text h2 {
-  color: #ffd700;
+  color: #ddd;
   margin-bottom: 20px;
   font-size: 2rem;
   letter-spacing: 1px;
@@ -245,7 +253,7 @@ Expertise Section
   */
 
 .expertise h2 {
-  color: #ffda44;
+  color: white;
   margin-bottom: 10px;
 }
 
@@ -283,7 +291,7 @@ Expertise Section
 .book-consultation label {
   display: block;
   margin-bottom: 6px;
-  color: #ffd700;
+  color: #ffffff;
   font-weight: bold;
 }
 
@@ -305,7 +313,7 @@ Expertise Section
 .submit {
   display: block;
   width: 100%;
-  background: linear-gradient(90deg, #ffda44, #f0a500);
+  background: linear-gradient(90deg, #ffffff, #f8e2b2);
   color: #000;
   font-weight: 600;
   border: none;
@@ -334,7 +342,7 @@ footer {
 }
 
 .footer h3 {
-  color: #ffd700;
+  color: #ddd;
 }
 
 .footer ul li a {
@@ -343,7 +351,7 @@ footer {
 }
 
 .footer ul li a:hover {
-  color: #ffda44;
+  color: #ddd;
   text-decoration: underline;
 }
 

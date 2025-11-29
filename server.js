@@ -105,7 +105,7 @@ app.post("/submit", async (req, res) => {
 
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: "Something went wrong! OR Check you are connected you internet" });
+    res.status(500).json({ error: " OR Check you are connected you internet" });
   }
 });
 

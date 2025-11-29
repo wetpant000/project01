@@ -12,6 +12,8 @@ services:
         sync: false
       - key: NOTIFY_PASS
         sync: false
+      - key: RECEIVER_EMAIL 
+        sync: false
       - key: TWILIO_ACCOUNT_SID
         sync: false
       - key: TWILIO_AUTH_TOKEN
